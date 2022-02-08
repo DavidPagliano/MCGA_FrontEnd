@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.App .menu {
+  color: #ff0000;
+  cursor: pointer;
+  text-decoration: none;
+}
