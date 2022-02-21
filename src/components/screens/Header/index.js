@@ -6,6 +6,8 @@ import Products from '../Products';
 import Home from '../Home';
 import Contacts from '../Contacts';
 import LogIn from '../LogIn';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header () {
     
@@ -48,7 +50,7 @@ function Header () {
                 </ol>
               </ul>             
             )}
-            <button onClick={ToggleNav} className='btn-navbar'>btn-navbar</button>
+            <button onClick={ToggleNav} className='btn-navbar'><FontAwesomeIcon icon={faBars} /></button>
           </div>
           <Routes> 
             <Route path="/" element={<Home/>}/>
