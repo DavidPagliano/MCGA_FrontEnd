@@ -20,29 +20,7 @@ function SignInForm (props){
                 <div>
                     <label>Email</label>
                     <Field name="Email" component="input" placeholder="Email" />
-                </div>
-                <div>
-                    <label>Phone</label>
-                    <Field name="Phone" type='text' component="input" placeholder="Phone" />
-                </div>
-                <br/>
-                <div>
-                    <h2>Datos de la empresa</h2>
-                    <div>
-                        <div>
-                            <label>First Name</label>
-                            <Field name="firstName" component="input" placeholder="First Name" />
-                        </div>
-                        <div>
-                            <label>Last Name</label>
-                            <Field name="lastName" component="input" placeholder="Last Name" /> 
-                        </div>
-                    </div>
-                    <label>Type Enterprise</label>
-                    <div><Field name='Type-Enterprise' component="input" type="checkbox" value="E-commerse"/>E-commerse</div>
-                    <div><Field name='Type-Enterprise' component="input" type="checkbox" value="Business"/>Business</div>
-                    <div><Field name='Type-Enterprise' component="input" type="checkbox" value="small company"/>small company</div>   
-                </div>
+                </div>        
             </div>
             <br/>
             <div>
@@ -61,6 +39,7 @@ function SignInForm (props){
                 </div>
             </div>
             <button type="submit">Submit</button>
+            <button>cancel</button>
         </form>      
     );
 }

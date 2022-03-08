@@ -39,7 +39,7 @@ function Header () {
       return (
         <BrowserRouter>
           <div className="container-header">
-            {(toggleMenu || screenWidth > 500) && (
+            {(toggleMenu || screenWidth > 500) && (toggleMenu || screenWidth > 850) && (
               <ul className='menu-navbar'>
                 <li className='links-navbar'><NavLink className="link" to="/">Home</NavLink></li>
                 <li className='links-navbar'><NavLink className="link" to="/products">Products</NavLink></li>
