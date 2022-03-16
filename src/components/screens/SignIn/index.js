@@ -26,7 +26,7 @@ class SignIn extends React.Component {
 
  render(){
     return (
-      <div className='SignIn'>
+      <div className='contanier-signin'>
         <h1>SignIn</h1>
         <Form
           onSubmit={this.onSubmit}

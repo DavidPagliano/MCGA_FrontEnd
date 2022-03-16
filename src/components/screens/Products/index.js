@@ -7,7 +7,7 @@ import Plans3 from './Plans/Plans3';
 
 function Products() {
   return (
-    <div className="Products">
+    <div className="contanier-plan">
      <h1>Products</h1>
       <ul>
         <li><Plans1>Plan1</Plans1></li>

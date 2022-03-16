@@ -1,23 +1,37 @@
 import './App.css';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from './screens/Header';
 
 
 
-class App extends React.Component {
-  constructor (props){
-    super(props)
-   
-  }
+function App () { 
+    const [toggleMenu, setToggleMenu] = useState(false)
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
-  render(){
-    return (
-      <div className='App'> 
-            <Header/>
-      </div>
-        
-    );
-  }
+    useEffect(() => {
+
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', changeWidth)
+
+    return () => {
+        window.removeEventListener('resize', changeWidth)
+    }
+
+  }, [])
+  return (
+    <div className='App'> 
+      {(toggleMenu || screenWidth > 500) && (toggleMenu || screenWidth > 850) && (
+        <Header/>
+        )
+      }
+          
+    </div>
+      
+  );
+  
   
 }
 

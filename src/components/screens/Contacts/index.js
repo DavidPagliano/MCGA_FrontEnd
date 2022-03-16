@@ -24,13 +24,8 @@ class Contacts extends React.Component {
     }
       render(){
         return (
-            <div className="Contact">
-             <h1>Contact</h1>
-                <ul>
-                    <li>Plan1</li>
-                    <li>Plan2</li>
-                    <li>Plan3</li>
-                </ul>
+            <div className="contanier-contact">
+                <h1>Contact</h1>
                 <div className='form-contact'>
                     <Form
                         onSubmit={this.onSubmit}

@@ -18,16 +18,16 @@
     width: 100%;
     padding: 2rem 6rem 2rem;
     border-radius: 0.5rem;
-    background-color: #2864d4c2;
+    background-color: #ffffffc2;
 }
 .menu-navbar-2 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 30px;
-    width: 10%;
+    width: 30%;
     border-radius: 0.5rem;
-    background-color: #2864d4c2;
+    background-color: #5588e7c2;
     
 }
 
@@ -58,24 +58,148 @@
     font-size: 18px;
 }
 
+@media screen and (max-width: 1366px) {
+    .container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 67rem;
+    border-radius: 0.5rem;
+    border: #0059ff;
+    background-color: #e9edf3;
+    }
+    .menu-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: flex-start;
+        height: 30px;
+        width: 90%;
+        padding: 2rem 8rem 2rem;
+        border-radius: 0.5rem;
+        background-color: #ffffffc2;
+    }
+    .menu-navbar-2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 30px;
+        width: 30%;
+        border-radius: 0.5rem;
+        background-color: #5588e7c2;
+        
+    }
+
+    .links-navbar{
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+
+    }
+
+    .link{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        cursor: pointer;
+        color: #000000fa;
+    }
+    .btn-navbar{
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        padding: 5px;
+        color: #000;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 500px;
+        border-radius: 0.5rem;
+        border: #0059ff;
+        background-color: #e9edf3;
+        }
+        .menu-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: flex-start;
+            height: 30px;
+            width: 90%;
+            padding: 2rem 8rem 2rem;
+            border-radius: 0.5rem;
+            background-color: #ffffffc2;
+        }
+        .menu-navbar-2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 30px;
+            width: 30%;
+            border-radius: 0.5rem;
+            background-color: #5588e7c2;
+            
+        }
+    
+        .links-navbar{
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            list-style-type: none;
+    
+        }
+    
+        .link{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            cursor: pointer;
+            color: #000000fa;
+        }
+        .btn-navbar{
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            padding: 5px;
+            color: #000;
+            font-size: 18px;
+        }
+}
+
 /*Resolution for tablet*/
 @media screen and (max-width: 850px){
     .container-header{
         flex-direction: column;
         height: 3rem;
-        width: 900px;
+        width: 100px;
     }
     .menu-navbar{
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: auto;
-        width: 900px;
+        width: 200px;
     }
     .menu-navbar-2{
         flex-direction: column;
         height: auto;
-        width: 900px;
+        width: 200px;
     }
     
     .btn-navbar{
@@ -100,6 +224,7 @@
     .menu-navbar{
         flex-direction: column;
         height: auto;
+        width: 12rem;
     }
     .menu-navbar-2{
         flex-direction: column;

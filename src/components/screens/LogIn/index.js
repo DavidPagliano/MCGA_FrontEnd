@@ -22,7 +22,7 @@ class LogIn extends React.Component {
 
  render(){
     return (
-      <div className='LogIn'>
+      <div className='contanier-login'>
         <Form
           onSubmit={this.onSubmit}
           validate={this.validate}

@@ -1,0 +1,10 @@
+.contanier-signin{ /* Content Principal*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 60rem;
+    margin: 3rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
+  }

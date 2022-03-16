@@ -1,9 +1,57 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: center;
+  width: 100%;
+  height: 967px;
+  background-image: linear-gradient(to right top, #033d46, #004e72, #005da5, #0065d6, #3661f9);
+}
+/*Resolution for tablet*/
+@media screen and (max-width: 1366px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 1359px;
+    height: 768px;
+    background-image: linear-gradient(to right top, #033d46, #004e72, #005da5, #0065d6, #3661f9);
+  }
 }
 
-.App .menu {
-  color: #ff0000;
-  cursor: pointer;
-  text-decoration: none;
+@media screen and (max-width: 1024px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 1024px;
+    height: 768px;
+    background-image: linear-gradient(to right top, #033d46, #004e72, #005da5, #0065d6, #3661f9);
+  }
+}
+
+@media screen and (max-width: 850px){
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    height: 1256px;
+    background-image: linear-gradient(to right top, #033d46, #004e72, #005da5, #0065d6, #3661f9);
+  }
+
+}
+@media screen and (max-width: 500px){
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    height: 667px;
+    background-image: linear-gradient(to right top, #033d46, #004e72, #005da5, #0065d6, #3661f9);
+  }
 }
